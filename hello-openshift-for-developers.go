@@ -12,7 +12,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 	if len(response) == 0 {
 		currentTime := time.Now()
 		
-		response = "Hello OpenShift Developers! ["+currentTime.Format(\"20-02-2020 15:04:03\")+"]"
+		response = "Hello OpenShift Developers! ["+currentTime.Format("01-02-2006 15:04:05")+"]"
 	}
 
 	fmt.Fprintln(w, response)
