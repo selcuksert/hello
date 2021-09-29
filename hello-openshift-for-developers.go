@@ -10,7 +10,7 @@ import (
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	response := os.Getenv("RESPONSE")
 	if len(response) == 0 {
-		var currentTime = time.Now().Format("01-02-2006 15:04:05")
+		var currentTime = time.Now().Format("02-01-2006 15:04:05")
 		response = "Hello OpenShift Developers! ["+currentTime+"]"
 	}
 
